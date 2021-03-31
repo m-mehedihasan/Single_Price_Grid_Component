@@ -1,0 +1,136 @@
+:root {
+    --primary: #0f8c80;
+    --primary-light: #1bb3a4;
+    --secondary: #7b9611;
+    --secondary-light: #acd40f;
+    --light: #ffffff;
+    --very-dark: #000000;
+    --dark: #0f0f0f;
+    --light-gray: #f1f1f1;
+    --max: 3em;
+    --medium: 1.5em;
+    --less-medium: 1.4em;
+    --small: 0.8em;
+}
+
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html  {
+    font-size: 1rem;
+}
+
+body {
+     font-family: 'PT Sans', sans-serif;
+     background-color: var(--light-gray);
+     font-size: 1.2em;
+}
+
+.container {
+    background-color: var(--light);
+    width: 900px;
+    margin: auto;
+}
+
+/* Heading Part */
+.head {
+    padding: 1.5em;
+
+}
+
+.head h1 {
+    font-size: var(--max);
+    color: var(--primary);
+    margin-bottom: 0.5em;
+}
+.head h2 {
+    font-size: var(--medium);
+    color: var(--secondary);
+     margin: 0.5em 0em;
+}
+.head p {
+    color: gray;
+     margin: 0.5em 0em;
+}
+
+ /*price-desc section design part */
+
+.desc ul {
+    list-style: none;
+}
+.desc ul li {
+    color: var(--light-gray);
+    font-size: var(--small);
+}
+.price {
+    background-color: var(--primary);
+    color: var(--light);
+    width: 100%;
+     padding: 1.5em;
+}
+
+.price h4 {
+    font-size: 1.1em;
+    font-style: italic;
+    margin-bottom: 0.3em;
+}
+.price span {
+    font-size: 2em;
+    font-style: normal;
+}
+.price p {
+    font-size: 0.9em;
+    margin-bottom: 1.4em;
+}
+.price h3, .desc h3 {
+    font-size: var(--less-medium);
+    margin-bottom: 0.3em;
+}
+
+
+.desc {
+    background-color: var(--primary-light);
+    color: var(--light);
+    width: 100%;
+     padding: 1.5em;
+}
+
+/*style for button */
+.btn {
+    border: none;
+    padding: 0.5em 0.8em;
+}
+.btn-signup {
+    width: 230px;
+    margin-top: 1.4em;
+    background-color: var(--secondary-light);
+    color: var(--light);
+    border-radius: 5px;
+}
+
+/* Layout */
+.price-desc {
+    display: flex;
+    flex-direction: row;
+}
+
+ /*Changing Layout for 600px max width devices */
+
+@media screen and (max-width: 600px)
+{
+    /* Layout */
+.price-desc {
+    flex-direction: column;
+}
+.price {
+    text-align: center;
+}
+.desc {
+    text-align: center;
+}
+}
