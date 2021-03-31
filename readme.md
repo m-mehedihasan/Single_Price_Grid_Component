@@ -1,4 +1,4 @@
-<!-- Single Price Grid Component  -->
+* Single Price Grid Component  
 This is Simple Startup Project On HTML, CSS, JAVASCRIPT
 
 
